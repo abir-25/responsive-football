@@ -274,10 +274,7 @@ Media Queries
 
 /*Mobile Devices*/
 @media only screen and (max-width: 688px) {
-    .top-section{
-        width: 100%;
-        background: #2D25A0;
-    }
+    
     .top-banner{
         display: flex;
         flex-direction: column;
@@ -286,7 +283,7 @@ Media Queries
         padding: 10px;
     }
     .banner-title{
-        width: 100%;
+        width: 90%;
         font-size: 36px;
         line-height: 50px;
         margin:50px 70px 40px 16px;
@@ -306,16 +303,32 @@ Media Queries
 
     .players{
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
         grid-row-gap: 27px;
         justify-content: center;
-        padding-bottom: 0;
+        padding:15px;
     }
     .player{
-        width: 330px;
+        width: 90%;
         background-color: #ffffff;
         box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
         padding: 15px 15px 33px 15px;
+    }
+    .player-image img{
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .player-name{
+        font-size: 28px;
+        font-weight: bold;
+        margin-top: 16px;
+        margin-bottom: 10px;
+    } 
+    .player-info{
+        font-size: 16px;
+        color: #6C6C6C;
+        margin-top: 0;
+        font-weight: 400;
     }
 
 
@@ -351,11 +364,15 @@ Media Queries
     .news-info{
         width: 55%;
     }
+    .news-title{
+        font-size: 14px;
+    }
 
     .video-section{
-        width: 92%;
+        width: 90%;
         margin: 0 auto;
         margin-bottom: 50px;
+        padding: 0;
     }
     .video-details h2{
         font-size: 20px;
@@ -390,6 +407,7 @@ Media Queries
     }
     .footer-image{
         text-align: center;
+        padding: 0;
     }
     .footer-image img{
         width: 85%;
@@ -400,6 +418,7 @@ Media Queries
         grid-template-columns: repeat(4, 1fr);
         grid-column-gap: 14px;
         margin-top: 35px;
+        padding: 0;
     }
     .social-icon i{
         font-size: 32px;
