@@ -208,6 +208,25 @@ news section
 /*-------------
 medias section
 --------------*/
+.video-section{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+.video-section video{
+    width: 100%;
+}
+.video-details{
+    margin-top: 0;
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.video-details span{
+    color: #E02C6D;;
+}
 .photo-album{
     display: flex;
     justify-content: space-between;
@@ -244,3 +263,7 @@ medias section
     margin-top: 15px;
     margin-bottom: 0;
 }
+
+/*-------------
+footer section
+--------------*/
