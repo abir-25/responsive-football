@@ -30,9 +30,9 @@ header section
     font-size: 64px;
     font-weight: 700;
     color: #ffffff;
-    margin-top: 72px;
+    margin-top:0;
     margin-bottom: 37px;
-    line-height: 80px;
+    line-height: 75px;
 }
 .watch-live-link{
     color: #ffffff;
@@ -75,10 +75,10 @@ players section
     grid-column-gap: 30px;
     grid-row-gap: 27px;
     justify-content: center;
-    padding: 70px 140px 165px;
+    padding: 70px 150px 165px;
 }
 .player{
-    width: 330px;
+    width: 270px;
     background-color: #ffffff;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     padding: 15px 15px 33px 15px;
@@ -139,7 +139,7 @@ news section
     padding: 0px 100px 100px;
 }
 .news-details{
-    width: 350px;
+    width: 335px;
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -147,17 +147,17 @@ news section
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .news-image-area{
-    width: 160px;
+    width: 150px;
 }
 .news-image{
     width: 100%;
     height: 100px;
 }
 .news-info{
-    width: 180px;
+    width: 175px;
     position: relative;
 }
-.news-info p{
+.news-title{
     font-size: 14px;
     margin-top: 5px;
     position: absolute;
@@ -172,7 +172,7 @@ news section
     top:25%;
     left: -10px;
     transform: rotate(45deg);
-    transition:.5s;
+    transition:.4s;
 }
 .news-details:hover .arrow-section{
     left: -15px;
@@ -207,8 +207,8 @@ medias section
     padding: 0px 100px 158px;
 }
 .photo-frame{
-    width: 270px;
-    height: 370px;
+    width: 23%;
+    height: 340px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -221,7 +221,7 @@ medias section
     padding: 5px;
 }
 .photo-detail h2{
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     font-weight: 500;
 }
@@ -314,7 +314,7 @@ Media Queries
         padding:15px;
     }
     .player{
-        width: 90%;
+        width: 92%;
         background-color: #ffffff;
         box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
         padding: 15px 15px 33px 15px;
@@ -375,7 +375,7 @@ Media Queries
         width: 55%;
     }
     .news-title{
-        font-size: 14px;
+        font-size: 12px;
     }
 
     /*------------
@@ -443,6 +443,5 @@ Media Queries
         margin-top: 20px;
         margin-bottom: 100px;
     }
-    
 }
     
