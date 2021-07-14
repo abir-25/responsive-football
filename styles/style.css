@@ -12,9 +12,9 @@ body{
     padding: 0;
 }
 
-/*---------
+/*------------
 header section
-----------*/
+-------------*/
 .top-section{
     width: 100%;
     background: #2D25A0;
@@ -100,9 +100,9 @@ players section
     font-weight: 400;
 }
 
-/*-------------
+/*---------------
 highlight section
---------------*/
+----------------*/
 .highlight{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -129,9 +129,9 @@ highlight section
     width: 100%;
 }
 
-/*-------------
+/*----------
 news section
---------------*/
+------------*/
 .news{
     display: flex;
     justify-content: space-between;
@@ -178,9 +178,9 @@ news section
     left: -15px;
 } 
 
-/*-------------
+/*------------
 medias section
---------------*/
+-------------*/
 .video-section{
     width: 1000px;
     margin: 0 auto;
@@ -275,6 +275,9 @@ Media Queries
 /*Mobile Devices*/
 @media only screen and (max-width: 688px) {
     
+    /*------------
+    header section
+    -------------*/
     .top-banner{
         display: flex;
         flex-direction: column;
@@ -300,7 +303,9 @@ Media Queries
         margin-left: 19px;
     }
 
-
+    /*-------------
+    players section
+    --------------*/
     .players{
         display: grid;
         grid-template-columns: 1fr;
@@ -331,7 +336,9 @@ Media Queries
         font-weight: 400;
     }
 
-
+    /*---------------
+    highlight section
+    ----------------*/
     .highlight{
         display: grid;
         grid-template-columns: 1fr;
@@ -343,12 +350,15 @@ Media Queries
     .highlight-title{
         font-size:30px;
         margin-top: 60px;
+        line-height: 40px;
     }
     .highlight-image img{
         margin-top: 40px;
     }
 
-
+    /*----------
+    news section
+    ------------*/
     .news{
         display: flex;
         flex-direction: column;
@@ -368,6 +378,9 @@ Media Queries
         font-size: 14px;
     }
 
+    /*------------
+    medias section
+    -------------*/
     .video-section{
         width: 90%;
         margin: 0 auto;
@@ -397,6 +410,9 @@ Media Queries
         height: 50px
     }
 
+    /*-------------
+    footer section
+    --------------*/   
     .footer-section{
         width: 100%;
         display: flex;
