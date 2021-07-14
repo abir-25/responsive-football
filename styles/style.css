@@ -15,47 +15,15 @@ body{
 /*---------
 header section
 ----------*/
-
-/* navigation section */
 .top-section{
     width: 100%;
     background: #2D25A0;
 }
-.top-navigation{
-    padding: 42px 124px 59px;
-    display: flex;
-    justify-content: space-between;
-    
-}
-.top-navigation .navbar a{
-    font-size: 16px;
-    font-weight: 500;
-    color: #ffffff;
-    text-decoration: none;
-    font-style: normal;
-    margin-right: 36px;
-}
-.top-navigation .navbar a:hover{
-    text-decoration: underline;
-}
-.top-navigation .login-section a{
-    color: #ffffff;
-    padding: 10px 24px;
-    background-color: #E02C6D;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 16px;
-}
-.top-navigation .login-section i{
-    color: #ffffff;
-    margin-right: 8px;
-}
-
-/* banner section */
 .top-banner{
     display: flex;
     justify-content: space-between;
-    padding: 0px 120px 86px;
+    padding: 50px 120px 86px;
+    align-items: center;
 }
 .banner-title{
     width: 485px;
@@ -83,7 +51,8 @@ header section
     transform: translate(10px, 0px);
 }
 .banner-image{
-    width: 556px;
+    width: 100%;
+    margin-left: 100px;
 }
 .top-banner .banner-image img{
     width: 100%;
@@ -189,7 +158,6 @@ news section
     position: absolute;
     z-index: 1;
     color: #6C6C6C;
-
 }
 .arrow-section{
     background-color:#ffffff;
@@ -291,3 +259,145 @@ footer section
     font-weight: 400;
     margin-bottom: 0;
 }
+
+/*--------------------------- 
+Media Queries 
+-----------------------------*/
+
+/*Mobile Devices*/
+@media only screen and (max-width: 688px) {
+    .top-section{
+        width: 100%;
+        background: #2D25A0;
+    }
+    .top-banner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    .banner-title{
+        width: 100%;
+        font-size: 36px;
+        line-height: 50px;
+        margin:50px 70px 40px 16px;
+    }
+    .banner-image{
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 0;     
+    }
+    .top-banner .banner-image img{
+        width: 100%;
+    }
+    .watch-live-link{
+        margin-left: 19px;
+    }
+
+
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 27px;
+        justify-content: center;
+        padding-bottom: 0;
+    }
+    .player{
+        width: 330px;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+        padding: 15px 15px 33px 15px;
+    }
+
+
+    .highlight{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+    .highlight-details{
+        width: 100%;
+    }
+    .highlight-title{
+        font-size:30px;
+        margin-top: 60px;
+    }
+    .highlight-image img{
+        margin-top: 40px;
+    }
+
+
+    .news{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 50px 15px 15px 15px;
+    }
+    .news-details{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .news-info{
+        width: 55%;
+    }
+
+    .video-section{
+        width: 92%;
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+    .video-details h2{
+        font-size: 20px;
+    }
+    .photo-album{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:0px;
+    }
+    .photo-frame{
+        width: 92%;
+        height: 370px;
+        margin-bottom: 50px;
+    }
+    .photo-detail h2{
+        font-size: 18px;
+    }
+    .photo-author{
+        background-color: #000;
+        text-align: center;
+        height: 50px
+    }
+
+    .footer-section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .footer-image{
+        text-align: center;
+    }
+    .footer-image img{
+        width: 85%;
+        margin-top: 50px;
+    }
+    .social-icon{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 14px;
+        margin-top: 35px;
+    }
+    .social-icon i{
+        font-size: 32px;
+    }
+    .copyright-text p{
+        margin-top: 20px;
+    }
+    
+}
+    
