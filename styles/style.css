@@ -278,7 +278,6 @@ footer section
 }
 .social-icon{
     padding: 20px 156px;
-    background-color: red;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 14px;
@@ -290,4 +289,5 @@ footer section
     margin-top: 0;
     font-size: 18px;
     font-weight: 400;
+    margin-bottom: 0;
 }
